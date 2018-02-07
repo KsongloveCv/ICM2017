@@ -1,0 +1,104 @@
+clc
+clear
+tic
+tA=input('«Î ‰»ÎtA:  ');
+tDi=input('«Î ‰»ÎtDi:  ');
+tDp=input('«Î ‰»ÎtDp:  ');
+tBi=input('«Î ‰»ÎtBi:  ');
+tBp=input('«Î ‰»ÎtBp:  ');
+t9=input('«Î ‰»Ît9:  ');
+a=60/tA;
+b=60/tDi;
+c=60/tDp;
+d=60/tBi;
+e=60/tBp;
+f=60/t9;
+x0=(d+e)/a;
+x1=1;
+x2=e/c;
+x3=1;
+x4=e/d;
+x5=e/b;
+x6=e/d;
+x7=d/b;
+x8=1;
+x9=d/e;
+x10=d/c;
+x11=d/e;
+x12=e/f+d/f;
+x13=d+e;
+xx=[x0
+    x1
+    x2
+    x3
+    x4
+    x5
+    x6
+    x7
+    x8
+    x9
+    x10
+    x11
+    x12
+    x13
+    ];
+jieguo=sum(xx,1);
+ss=1/jieguo;
+y1=ss*(d+e)/a;
+y2=ss*1;
+y3=ss*e/c;
+y4=ss*1;
+y5=ss*e/d;
+y6=ss*e/b;
+y7=ss*e/d;
+y8=ss*d/b;
+y9=ss*1;
+y10=ss*d/e;
+y11=ss*d/c;
+y12=ss*d/e;
+y13=ss*(e/f+d/f);
+y14=ss*(d+e);
+answer=[y1
+    y2
+y3
+y4
+y5
+y6
+y7
+y8
+y9
+y10
+y11
+y12
+y13
+y14];
+la=y1;
+Lbp=y2+y8+y9+y10;
+Lbi=y2+y3+y4+y5;
+Ldp=y3+y4+y11+y12;
+Ldi=y6+y7+y8+y9;
+Lcp=y5+y6+y7+y13;
+Lci=y10+y11+y12+y13;
+Lo=y14;
+tAa=y1;
+tBp=y2+y4+y12+y10;
+tBi=y2+y5+y7+y9;
+tDi=y6+y8;
+tDp=y3+y11;
+tc=y13;
+zuizhong=[la
+    Lbp
+    Lbi
+    Ldp
+    Ldi
+    Lcp
+    Lci
+    Lo
+    tAa
+    tBp
+    tBi
+    tDi
+    tDp
+    tc]
+    
+    
